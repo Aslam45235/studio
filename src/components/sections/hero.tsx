@@ -6,10 +6,13 @@ import { Card } from '@/components/ui/card';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative w-full h-[90vh] min-h-[700px] flex items-center">
+    <section
+      id="home"
+      className="relative w-full h-[90vh] min-h-[700px] flex items-center"
+    >
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="/image/excavator-action.jpg"
           alt="Modern building under construction"
           fill
           priority
@@ -22,16 +25,21 @@ export default function Hero() {
         <div className="max-w-3xl text-left">
           <div className="animate-fade-in-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold mb-4 text-primary-foreground drop-shadow-lg">
-              Building Your Visions, Creating Reality
+              Building Dreams Brick by Brick
+              Materials
             </h1>
           </div>
           <div className="animate-fade-in-up animation-delay-200">
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl drop-shadow-md">
-              J.Khans Construction is your trusted partner in bringing architectural dreams to life. From residential homes to commercial complexes, we deliver excellence and quality on time, every time.
+             Trusted supplier of high-quality sand, bajri, bricks, and construction materials. Timely delivery and affordable rates. Serving residential & commercial projects across Lahore
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-400">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
+            >
               <Link href="#services">Our Services</Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="shadow-lg">

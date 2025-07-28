@@ -19,7 +19,7 @@ export default function Home() {
         <Projects />
         <About />
         <Testimonials />
-        <AIPlanner />
+        {/* <AIPlanner /> */}
         <Contact />
       </main>
       <Footer />

@@ -13,7 +13,7 @@ const navLinks = [
   { href: '#projects', label: 'Projects' },
   { href: '#about', label: 'About Us' },
   { href: '#testimonials', label: 'Testimonials' },
-  { href: '#ai-planner', label: 'AI Planner' },
+  // { href: '#ai-planner', label: 'AI Planner' },
 ];
 
 export default function Header() {
@@ -39,7 +39,7 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary">
             <Building2 className="h-7 w-7" />
-            <span className={cn("font-headline", scrolled ? "text-primary" : "text-primary-foreground")}>J.Khans Construction</span>
+            <span className={cn("font-headline", scrolled ? "text-primary" : "text-primary-foreground uppercase")}>J.Khans Construction</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">

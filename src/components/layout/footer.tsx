@@ -11,7 +11,7 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-card text-card-foreground border-t">
+    <footer className="text-card-foreground border-t">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center md:items-start">
@@ -26,7 +26,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-center">
             <h3 className="font-semibold mb-4 text-lg">Quick Links</h3>
-            <nav className="flex flex-col gap-2 items-center">
+            <nav className="flex gap-2 items-center">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   {link.label}
@@ -37,7 +37,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-center md:items-end">
             <h3 className="font-semibold mb-4 text-lg">Follow Us</h3>
-            <div className="flex gap-4">
+            <div className="flex gap-4 ">
               <Link href="#" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </Link>
